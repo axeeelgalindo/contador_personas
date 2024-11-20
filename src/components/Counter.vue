@@ -1,4 +1,3 @@
-<!-- src/components/Counter.vue -->
 <template>
   <div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
     <h1 class="text-3xl font-bold mb-4 text-center uppercase ">Contador de Personas</h1>
@@ -30,7 +29,3 @@ const decrement = () => {
   store.decrement(1);
 };
 </script>
-
-<style scoped>
-/* Puedes agregar estilos adicionales aquí si lo deseas */
-</style>

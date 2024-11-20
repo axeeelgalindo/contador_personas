@@ -1,4 +1,3 @@
-// src/services/socketService.js
 import { io } from "socket.io-client";
 
 const SIO_BASE_URL = import.meta.env.VITE_SIO_BASE_URL;

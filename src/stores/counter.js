@@ -1,4 +1,3 @@
-// src/stores/counter.js
 import { ref, onMounted, onUnmounted } from 'vue';
 import { defineStore } from 'pinia';
 import { createSocket } from '../services/socketService';
@@ -9,7 +8,7 @@ export const useCounterStore = defineStore('counter', () => {
   let socket = null;
   
   const ACCESS_TOKEN = import.meta.env.VITE_ACCESS_TOKEN;
-  const API_BASE_URL = 'https://ikcount.com/iklab';
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
   const increment = async (quantity = 1) => {
     try {
